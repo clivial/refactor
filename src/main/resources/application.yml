@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: refactor-web
+
+
+
+server:
+  context-path: /
+  tomcat:
+    accept-count: 2048
+    max-threads: 1024
+    min-spare-threads: 300
+
+
+
