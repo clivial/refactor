@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by liquan on 2017/11/6.
  */
 @RestController
+@RequestMapping("/api")
 public class UserController {
 
     @RequestMapping("/hello")

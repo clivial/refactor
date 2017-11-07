@@ -11,5 +11,21 @@ server:
     max-threads: 1024
     min-spare-threads: 300
 
+ext:
+    swagger:
+        title: refactor-web API
+        description: refactor-web API documentation
+        version: 0.0.1
+        termsOfServiceUrl:
+        contactName:
+        contactUrl:
+        contactEmail:
+        license:
+        licenseUrl:
+
+#ext.swagger.title: refactor-web API
+#ext.swagger.description: refactor-web API documentation
+
+
 
 
