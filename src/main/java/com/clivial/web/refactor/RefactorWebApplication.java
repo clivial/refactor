@@ -18,7 +18,7 @@ import javax.servlet.ServletException;
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @ServletComponentScan
-//@EnableSwagger2
+@EnableSwagger2
 //@EnableDiscoveryClient
 @EnableWebMvc
 @ComponentScan(basePackages = "com.clivial")
