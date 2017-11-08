@@ -18,11 +18,15 @@ import javax.servlet.ServletException;
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @ServletComponentScan
-@EnableSwagger2
+//@EnableSwagger2
 //@EnableDiscoveryClient
 @EnableWebMvc
-@ComponentScan(basePackages = "com.clivial.web.refactor")
+@ComponentScan(basePackages = "com.clivial")
 public class RefactorWebApplication extends SpringBootServletInitializer {
+
+	public RefactorWebApplication() {
+	}
+
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		super.onStartup(servletContext);
