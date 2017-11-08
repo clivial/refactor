@@ -10,6 +10,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -17,9 +18,10 @@ import javax.servlet.ServletException;
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @ServletComponentScan
+@EnableSwagger2
 //@EnableDiscoveryClient
 @EnableWebMvc
-//@ComponentScan(basePackages = "")
+@ComponentScan(basePackages = "com.clivial.web.refactor")
 public class RefactorWebApplication extends SpringBootServletInitializer {
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
